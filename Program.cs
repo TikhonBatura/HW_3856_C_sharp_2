@@ -8,11 +8,12 @@
 Console.WriteLine("Задача 10");
 Console.WriteLine("********");
 Console.WriteLine("Enter 3-digital number  ");
+
 string? strNumber = Console.ReadLine();
 int number = int.Parse(strNumber);
 Console.WriteLine(" ");
 Console.WriteLine(" ");
-if((number>100) && (number<999)) 
+if((number>99) && (number<1000)) 
 {
     number = number / 10;
     number = number % 10;
