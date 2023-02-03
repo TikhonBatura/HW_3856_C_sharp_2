@@ -21,11 +21,12 @@ if((number>100) && (number<999))
 }
 else
 {
-Console.WriteLine("Input incorrect number, plese try again.");
+Console.WriteLine("Input incorrect number.");
 }
 Console.WriteLine("********");
 Console.WriteLine(" ");
 Console.WriteLine(" ");
+
 
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа 
@@ -42,7 +43,7 @@ Console.WriteLine("********");
 
 Console.WriteLine("Let's play the game...");
 Console.WriteLine("Enter number and I show you 3th digital of it");
-Console.Write("Enter number ");
+Console.Write("Come on! Give me the number: ");
 
 string? strNumber2 = Console.ReadLine();
 int number2 = int.Parse(strNumber2);
@@ -53,7 +54,6 @@ if(number2 < 0)
     
 }
 Console.WriteLine(" ");
-Console.WriteLine(" ");
 if (number2 > 100)
     {
     while(number2/i > 999)
@@ -62,7 +62,7 @@ if (number2 > 100)
         }
     number2 = number2 / i;
     number2 = number2 % 10;
-    Console.WriteLine ($"The 3th digital in entered number is {number2}");
+    Console.WriteLine ($"The 3th digital is {number2}");
     }
 
 else 
@@ -82,3 +82,31 @@ Console.WriteLine(" ");
 // 7 -> да
 // 1 -> нет
 
+Console.WriteLine("Задача 15");
+Console.WriteLine("********");
+
+while (true)
+{
+        System.Console.WriteLine("Enter number of day: ");
+        number = int.Parse(Console.ReadLine());
+        if (number >= 1 && number <= 7)
+        {
+        break;
+        }
+        Console.WriteLine(" ");
+        Console.WriteLine("You input incoret number, please try again.");
+        Console.WriteLine(" ");
+
+}
+Console.WriteLine(" ");
+
+        if(number >= 1 && number <= 5)
+{
+    Console.WriteLine("No, you input work day number.");
+}
+else
+    Console.WriteLine("Yes, you input holiday day number.");
+
+Console.WriteLine("********");
+Console.WriteLine(" ");
+Console.WriteLine(" ");
